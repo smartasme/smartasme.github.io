@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <title>Smart As Me ltd - announcement</title>
+  <meta charset="utf-8"> 
+   
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+  <script src="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js"></script>
+  
+  <script language="javascript">
+	function queryString(name){
+	   if(name=(new RegExp('[?&]'+encodeURIComponent(name)+'=([^&]*)')).exec(location.search))
+		  return decodeURIComponent(name[1]);
+	}
+	
+	
+  </script>
+</head>
+<body>
+
+  <script language="javascript">
+	document.write("appvesion:" + queryString("appversion"));
+	document.write(". os:" + queryString("os"));
+	document.write(". lang:" + queryString("lang"));
+  </script>
+
+</body>
+</html>
+
