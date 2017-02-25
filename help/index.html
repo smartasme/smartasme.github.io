@@ -1,14 +1,54 @@
-
-
+﻿
 <!doctype html>
 <html class="no-js" lang="en">
    <head>
       <meta charset="utf-8"/>
       <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-      <title>Foundation | Welcome</title>
+      <title>Smart As Me Ltd | Help</title>
+	  
+	<meta name="title" content="Smart As Me Ltd | Smart Alarm" />
+	<meta name="description" content="Manage your day, manage your future. Smart As Me helps you to manage your every day to realize your full potential." />
+	<meta name="keywords" content="SmartAsMe,Alarm,Smart Alarm,Manage day,Manage time,Manage future">
+
+    <meta property="og:type" content="website">
+    <meta property="og:title" content="Smart As Me">
+    <meta property="og:description" content="Manage your day, manage your future. SmartAsMe helps you to manage your every day to realize your full potential.">
+    <meta property="og:url" content="http://www.smartasmeltd.com/">
+    <meta property="og:image" content="http://www.smartasmeltd.com/images/smartasme.png">
+    <meta property="og:site_name" content="SmartAsMe">
+    <meta property="og:locale" content="en_GB">
+	
+
+	  <link rel="shortcut icon" href="../favicon.ico">
       <link rel="stylesheet" href="http://dhbhdrzi4tiry.cloudfront.net/cdn/sites/foundation.min.css">
       <link href='http://cdnjs.cloudflare.com/ajax/libs/foundicons/3.0.0/foundation-icons.css' rel='stylesheet' type='text/css'>
-
+	  <style>
+	  body{
+		background:#e2e1e1;
+	  }
+	  a{
+		color:#2a5373;
+		font-weight:bold;
+	  }
+	  .button.hollow{
+		border: 1px solid #2a5373;
+		color: #2a5373;
+	  }
+	  .button.hollow:focus, .button.hollow:hover{
+	  	border: 1px solid #2199e8;
+		color: #2199e8;
+	  }
+	  .space{
+		margin: 4px 0px 4px 0px;
+	  }
+	  .button{
+		margin: 0px 0px 4px 0px;
+	  }
+	  .subheader{
+		color:black;
+		/* color:#8a8a8a; */
+	  }
+	  </style>
    </head>
    <body>
 	   
@@ -48,27 +88,48 @@
 	  
       <div class="row" name="top">
          <div class="medium-7 large-9 columns">
-		 <h1>Manage your day, manage your future</h1>
-            <p class="subheader">There
-               is beauty in space, and it is orderly. There is no weather, and there 
-               is regularity. It is predictable. Everything in space obeys the laws of 
-               physics. If you know these laws, and obey them, space will treat you 
-               kindly.
+            <h1>Manage your day, manage your future</h1>
+            <p class="subheader">
+               Thanks for using <a href="../">SmartAsMe</a>. Please feedback to us via <a href="#footer">Contact us</a>
             </p>
-		<a href="http://www.smartasmeltd.com">Home</a>
-            <a class="button" href="#topic1">Set TTS engine</a>
-            <a class="button" href="#topic2">Icon references</a>
-			<a class="button" href="#topic3">Why no sound</a>
-			<a class="button" href="#topic4">Why can't load the news</a>
-			<a class="button" href="#aboutus">About us</a>
+            <a class="button" href="#tts">Configure Text-To-Speech (TTS) engine</a>
+			<a class="button" href="#sound">Why an alarm goes off but no sound</a>
+			<a class="button" href="#alarmdetail">Tips for Alarm Detail screen</a>		
+			<a class="button" href="#quickadd">Hold "+" button for quick one-off alarm</a>			
+			<a class="button" href="#enablelinks">Enable link &amp; search a keyword</a>
+			<a class="button" href="#news">Why an action (e.g. news) fails to load</a>
          </div>
+		 
+	  
          <div class="medium-5 large-3 columns">
-            <div class="callout secondary">
-                  <div class="row">
-                     <div class="small-12 columns">
-                        <label>Find Your Dream Planet
-                        <input type="text" placeholder="Search destinations">
+			<p class="lead">Icons reference:</p>
+			
+            <div class="callout">
+
+                  <div class="row ">				 
+					 <div class="column space">
+						<label>
+						Voice on/off:&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+						<img src="../images/tts_on_off.png" alt="image of TTS on and off">
+						</label>
+                     </div>
+					 
+					 <div class="column space">
+						<label>
+						Cancel /&nbsp;move:&nbsp;&nbsp;&nbsp;&nbsp;
+						<img src="../images/cancel_move.png" alt="image of TTS on and off">
+						</label>
+                     </div>
+					 
+					 <div class="column space">
+                        <!-- <label>Search:
+                        <input type="text" placeholder="Search question">
                         </label>
+						-->
+						<label>
+						Volume on/off:&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+						<img src="../images/volume_on_off.png" alt="image of volume on and off">
+						</label>
                      </div>
                   </div>
             </div>
@@ -78,58 +139,62 @@
          <hr>
       </div>
       <div class="row column">
-         <p class="lead">Trending Planetary Destinations</p>
+         <p class="lead">Q&amp;A and tips</p>
       </div>
 	  
 	  
       <div class="row small-up-1 medium-up-2 large-up-3">
          <div class="column">
-            <div class="callout" id="topic1" name="topic1">
-               <p>How to set TTS</p>
-               <p><img src="http://placehold.it/400x370&text=Pegasi B" alt="image of a planet called Pegasi B"></p>
-               <p class="lead">In Settings, click one of the TTS engines</p>
-               <p class="subheader">Long hold the TTS engine, to configure the actual TTS engine</p>
+            <div class="callout" id="tts" name="tts">
+               <p class="lead">How to set voice (TTS) engine:</p>
+               <p><img src="../images/tts.png" alt="image of Text to Speech setup"></p>
+               <p>In Settings, select one of the TTS engines. If only default Pico TTS available, we recommend to install Google Text to Speech engine or other similar products for better voice quality.</p>
+               <p>Long hold the TTS engine, to configure the actual TTS engine</p>
+			   <p>Each category's title is clickable to collapse or uncollapse the corresponding settings</p>
+			   <p>Click "Alarms auto close in" expand the settings, input the minutes for auto closure for all alarms.</p>
             </div>
          </div>
-         <div class="column" id="topic2" name="topic2">
+		 <div class="column" id="quickadd" name="quickadd">
             <div class="callout">
-               <p>Icons reference:</p>
-               <p><img src="http://placehold.it/400x370&text=Pegasi B" alt="image of a planet called Pegasi B"></p>
-               <p class="lead">A)) means with sound.</p>
-               <p class="subheader">The Paris area is one of the largest population centers in Europe,
-with more than 12 million inhabitants.</p>
+               <p class="lead">Hold "+" (quick one-off alarm)</p>
+               <p><img src="../images/one_off_add_menu.png" alt="image of alarm list"></p>
             </div>
          </div>
-         <div class="column" id="topic3" name="topic3">
+		 <div class="column" id="alarmdetail" name="alarmdetail">
             <div class="callout">
-               <p>Why no sound</p>
-               <p><img src="http://placehold.it/400x370&text=Pegasi B" alt="image of a planet called Pegasi B"></p>
-               <p class="lead">Check if it's muted.</p>
-               <p class="subheader">Check if a language has been set in TTS engine by long hold the engine name in settings.</p>
+               <p class="lead">Tips for Alarm Detail screen</p>
+               <p><img src="../images/detail.png" alt="image of alarm detail screen"></p>
+			   <p>Click the back arrow button on the top to cancel the changes</p>
+			   <p>Drag <img src="../images/move.png" alt="image of TTS on"> to change the sequence</p>
+			   <p>Click <img src="../images/tts_on.png" alt="image of TTS on"> to turn the TTS volume off</p>
+			   <p>Click <img src="../images/ringtone.png" alt="image of sound on"> to turn the sound off</p>
+            </div>
+         </div>
+         <div class="column" id="sound" name="sound">
+            <div class="callout">
+               <p class="lead">Why no sound:</p>
+               <p><img src="../images/no_sound1.png" alt="image of no sound1"></p>
+               <p >Sound is muted in global settings</p>
+			   <p><img src="../images/no_sound2.png" alt="image of no sound1"></p>
+			   <p >Voice (TTS) is turned off in global Settings </p>
+			   <p><img src="../images/alarm_detail_tts_off.png" alt="image of no sound1"></p>
+			   <p >Voice (TTS) is turned off individually <img src="../images/tts_off.png" alt="image of TTS off"></p>
+            </div>
+         </div>
+		 <div class="column" id="enablelinks" name="enablelinks">
+            <div class="callout">
+               <p class="lead">Enable link clicks &amp; search a keyword</p>
+               <p><img src="../images/wakeup.png" alt="image of Wake Up screen"></p>
+			   <p>Click "Enable links" to make the links clickable on the screen</p>
+			   <p>Click magnifier icon to search a keyword, and press it again to search next occurance.</p>
             </div>
          </div>
          <div class="column">
-            <div class="callout" id="topic4" name="topic4">
-               <p>Pegasi B</p>
-               <p><img src="http://placehold.it/400x370&text=Pegasi B" alt="image of a planet called Pegasi B"></p>
-               <p class="lead">Copernican Revolution caused an uproar</p>
-               <p class="subheader">Find Earth-like planets life outside the Solar System</p>
-            </div>
-         </div>
-         <div class="column" id="topic5" name="topic5">
-            <div class="callout">
-               <p>Pegasi B</p>
-               <p><img src="http://placehold.it/400x370&text=Pegasi B" alt="image of a planet called Pegasi B"></p>
-               <p class="lead">Copernican Revolution caused an uproar</p>
-               <p class="subheader">Find Earth-like planets life outside the Solar System</p>
-            </div>
-         </div>
-         <div class="column">
-            <div class="callout">
-               <p>Pegasi B</p>
-               <p><img src="http://placehold.it/400x370&text=Pegasi B" alt="image of a planet called Pegasi B"></p>
-               <p class="lead">Copernican Revolution caused an uproar</p>
-               <p class="subheader">Find Earth-like planets life outside the Solar System</p>
+            <div class="callout" id="news" name="news">
+               <p class="lead">Fail to load actions</p>
+               <p><img src="../images/wakeup.png" alt="image of Wake Up screen"></p>
+               <p >Some action requires network: like weather, transport and news</p>
+               <p >Check if network is available, for custom news link, it needs to be RSS2.0 <img src="../images/rss.gif" alt="image of RSS"> format.</p>
             </div>
          </div>
       </div>
@@ -138,60 +203,42 @@ with more than 12 million inhabitants.</p>
 	  <div class="row column" id="aboutus" name="aboutus">
          <a class="button hollow expanded" href="#">Go to top</a>
       </div>
-      <footer >
-         <div class="row expanded callout secondary">
-            <div class="small-6 large-3 columns">
-               <p class="lead">Offices</p>
-               <ul class="menu vertical">
-                  <li><a href="#">One</a></li>
-                  <li><a href="#">Two</a></li>
-                  <li><a href="#">Three</a></li>
-                  <li><a href="#">Four</a></li>
-               </ul>
-            </div>
-            <div class="small-6 large-3 columns">
-               <p class="lead">Solar Systems</p>
-               <ul class="menu vertical">
-                  <li><a href="#">One</a></li>
-                  <li><a href="#">Two</a></li>
-                  <li><a href="#">Three</a></li>
-                  <li><a href="#">Four</a></li>
-               </ul>
-            </div>
-            <div class="small-6 large-3 columns">
-               <p class="lead">Contact</p>
-               <ul class="menu vertical">
-                  <li><a href="#"><i class="fi-social-twitter"></i> Twitter</a></li>
-                  <li><a href="#"><i class="fi-social-facebook"></i> Facebook</a></li>
-                  <li><a href="#"><i class="fi-social-instagram"></i> Instagram</a></li>
-                  <li><a href="#"><i class="fi-social-pinterest"></i> Pinterest</a></li>
-               </ul>
-            </div>
-            <div class="small-6 large-3 columns">
-               <p class="lead">Offices</p>
-               <ul class="menu vertical">
-                  <li><a href="#">One</a></li>
-                  <li><a href="#">Two</a></li>
-                  <li><a href="#">Three</a></li>
-                  <li><a href="#">Four</a></li>
-               </ul>
-            </div>
-         </div>
-         <div class="row">
-            <div class="medium-6 columns">
-               <ul class="menu">
-                  <li><a href="#">Legal</a></li>
-                  <li><a href="#">Partner</a></li>
-                  <li><a href="#">Explore</a></li>
-               </ul>
-            </div>
-            <div class="medium-6 columns">
-               <ul class="menu float-right">
-                  <li class="menu-text">Copyright</li>
-               </ul>
-            </div>
-         </div>
-      </footer>
+	  
+	  
+	  
+	<footer id="footer" name="footer" >
+		<div class="callout large secondary">
+		<div class="row">
+		<div class="large-4 columns">
+		<h5>Smart As Me ltd.</h5>
+		<p>With the passion of improving your efficiency in a healthy way, we created the app SmartAsMe in the hope of helping you build a good habit and make the best use of your time every day.</p>
+
+		</div>
+		<div class="large-3 large-offset-2 columns">
+		<ul class="menu vertical">
+		<li>Website:</li>
+		<li><a href="http://www.smartasmeltd.com">http://www.smartasmeltd.com</a></li>
+		<li name="contactus" id="contactus">Contact us:</li>
+		<li><a href="mailto:smartasmeltd@outlook.com">smartasmeltd@outlook.com</a></li>
+		</ul>
+		</div>
+		<div class="large-3 columns">
+		<ul class="menu vertical">
+		<li name="language" id="language">Language:</li>
+		<li><a href="#">English</a></li>
+		<li><a href="../zh/help">Chinese</a></li>
+		</ul>
+		</div>
+		</div>
+		
+		<ul class="menu float-right">
+		  <li class="menu-text">2017 © Smart As Me Ltd.</li>
+	    </ul>
+	</footer>	  
+	  
+	  
+	  
+      	  
       <script src="https://code.jquery.com/jquery-2.1.4.min.js"></script>
       <script src="http://dhbhdrzi4tiry.cloudfront.net/cdn/sites/foundation.js"></script>
       <script>
