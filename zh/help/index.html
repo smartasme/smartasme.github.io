@@ -50,7 +50,13 @@
 	  .title{
 		font-size:1.2em;
 	  }
+	  #mi_result{
+		visibility:none;
+	  }
 	  </style>
+	  
+	  
+	 
    </head>
    <body>
 	   
@@ -185,6 +191,12 @@
 			   <p >在设置屏幕，语音(TTS)被设置为静音</p>
 			   <p><img src="../images/alarm_detail_tts_off.png" alt="image of no sound1"></p>
 			   <p >闹钟内容设置屏幕，语音(TTS)被关闭<img src="../../images/tts_off.png" alt="image of TTS off"></p>
+			   
+			   <p><a id="mi" class="button" >如果是小米手机，请确保“自动启动管理”中允许该软件启动。点击查看详情。</a></p>
+			   <span id="mi_result" >
+
+			   </span>
+
             </div>
          </div>
          <div class="column">
@@ -253,6 +265,25 @@
       </script>
       <script type="text/javascript" src="https://intercom.zurb.com/scripts/zcom.js"></script>
 	  
+	  <script>
+	 
+		 // $(function() {
+			$("#mi_result").hide();
+		 
+			var mi_loaded = false;
+			
+			$("#mi").click(function() {
+			
+				$("#mi_result").toggle();
+				
+				if(!mi_loaded){
+					$("#mi_result").html("<p>1. 点击“安全中心”图标: <img src='../images/mi_security_icon.png' alt='image of Mi security icon'></p> <p>2. 点击“授权管理” <img src='../images/mi_security.png' alt='image of Mi security'></p> <p>3. 点击“自动启动管理” <img src='../images/mi_security_autostart.png' alt='image of Mi security auto start'></p> <p>4. 允许该软件自动自动 <img src='../images/mi_security_startup_settings.png' alt='image of enable auto start'></p>");
+				}
+
+			});
+		// });
+
+      </script>
 	  
    </body>
 </html>
